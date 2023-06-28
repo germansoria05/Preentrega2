@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+h1{color: rgb(190, 190, 59);
+    font-size: 2em;
+}
+
+h2{color:rgb(190, 190, 59);
+    font-size: 2em;
+}
+
+p{color: rgb(43, 53, 10);
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-style: italic;
+}
+
+h3{
+    color: rgb(190, 190, 59);
+    font-size: 2em;
+}
+
+header img{ 
+           width: 100%;
+}
+
+
+
+footer {
+    background-color: rgb(40, 135, 57);
+    padding: 6px 30px;
+}
+
+h1,h2,h3{
+    margin-bottom: 10px;
+}
+
+body{
+    background-image: url(../Imagenes/Fondos/86731045-fondo-abstracto-geométrico-blanco-y-gris-con-las-líneas-plantilla-para-páginas-web-folletos.webp);
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: rgba(101, 133, 37, 0.5);
+    padding: 6px 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+  
+    nav ul{list-style: none ;
+          display: inline-flex;
+          display: flex;
+
+}
+  
+   nav ul li a {text-decoration: none;
+                color: rgb(21, 21, 20);
+                font-size: 2em;
+                display: inline-block;
+                margin-right: 10px;
+}
+
+form label{
+    color: rgb(42, 106, 42);
+    font-size: 1em;
+    display: block;
+}
+
+main{
+    padding: 20px 30px;
+}
+
+.bg-red{
+    background-color: rgb(33, 99, 33);
+    text-shadow: none;   
+}
+
+.text-center{
+    text-align: center;
+}
+
+.contenedor{
+    background-color: rgb(128, 128, 217);
+    width: 90%;
+    height: auto;
+    overflow: auto;
+    margin: 20px auto;
+    padding: 20px 50px;
+    border:double 5px rgb(65, 65, 25) ;
+}
+
+.box-stop{
+    padding: 4px 0;
+    text-align: center;
+    background-color: white;
+    color: red;
+}
+
+
+.tr,th,td{
+    font-size: 2em;
+
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    margin-bottom: 10px;
+}
+
+img{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icono{
+    font-size: 24px;
+}
+
+.icono{
+    position: relative;
+    left: 10px;
+}
+.productos{
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.productos figure{
+    width: 75%;
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+}
+
+.productos figcaption{
+    color: rgb(198, 83, 83);
+    font-size: 1.6em;
+}
+.productos figure p{
+    font-size: 1.6em;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+
+.productos figure button{
+
+    border: none;
+    padding: 4px;
+    background-color: rgb(97, 83, 170);
+    border-radius: 3px 30px;
+    color: rgb(206, 206, 194);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.productos input{
+    display: grid;
+    grid-template-columns: 20% repeat(2,1fr); 
+    grid-template-rows: 80%;
+}
+
+@media (min-width: 280px) and (max-width: 1064px) {
+    
+}
