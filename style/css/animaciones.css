@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*fondos colores*/
+.bg-dark{
+	background-color: #262525
+}
+
+.bg-danger{
+	background-color: #C11111
+}
+
+.bg-info{
+	background-color: #0065c3
+}
+
+.bg-success{
+	background-color: #12E73F
+}
+
+.bg-warning{
+	background-color: #E76424
+}
+
+
+section{
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+}
+
+
+div{
+	color: black;
+	font-size: 2em;
+	border:solid 1px white;
+	border-radius: 5px;
+	margin: 30px;
+	height: 30vh;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.linear-gradient{
+	background: linear-gradient(to left, rgb(144, 146, 42), rgb(255, 20, 55));
+}
+
+.transform:hover{
+	transform: translate(-10px,30px);
+	cursor: pointer;
+	transition: all 2s;
+}
+
+.rotate:hover{
+	transform: rotate(-360deg);
+	cursor: pointer;
+	transition: all 2s;
+}
+
+.scale:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+	transition: all 2s;
+}
+
+.skew:hover{
+	transform: skew(15deg);
+	cursor: pointer;
+	transition: all 2s;
+}
+
+.animate{
+	animation-name: animateDiv;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	/* animation-delay: 1s; */
+}
+
+@keyframes textAlpha{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+h3{
+	animation-name: textAlpha;
+	animation-duration: 6s;
+}
+
+.transition{
+	background-color: yellow;
+}
+
+.transition:hover{
+	background-color: rgb(255, 0, 0);
+	transition: all 2s ease;
+	cursor: pointer;
+}
+
+
+button{
+	border: none;
+	width: 200px;
+	height: 30px;
+	color:white;
+	background: linear-gradient(to top, rgb(144, 146, 42), rgb(255, 20, 55));
+	border-radius: 5px;
+	margin: 50px;
+}
+
+button:hover{
+	cursor: pointer;
+	background: linear-gradient(to top, rgb(144, 146, 42), rgb(255, 20, 55));
+	transition: all 1s ease;
+}
+
+

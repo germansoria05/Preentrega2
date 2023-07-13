@@ -7,6 +7,16 @@
 
 }
 
+.botonera{
+    background-color: rgb(177, 44, 44);
+}
+   .botonera img{
+    width: 100px;
+   }
+   botonera a{
+    color: rgb(231, 229, 227);
+   }
+
 html{
     font-size: 62.5%;
 }
@@ -40,7 +50,7 @@ h2{
 }
 
 p{
-    color: rgb(43, 53, 10);
+    color: rgb(132, 17, 17);
     font-weight: 800;
     font-size: 2em;
     line-height: 1.5em;
@@ -75,7 +85,7 @@ body{
 }
 
 nav{
-    background-color: rgba(101, 133, 37, 0.5);
+    background-color: rgba(183, 48, 27, 0.5);
     padding: 6px 30px;
     top: 0;
     left: 0;
@@ -101,7 +111,7 @@ nav{
 }
 
 form label{
-    color: rgb(42, 106, 42);
+    color: rgb(147, 47, 17);
     font-size: 1em;
     display: block;
 }
@@ -111,7 +121,7 @@ main{
 }
 
 .bg-red{
-    background-color: rgb(33, 99, 33);
+    background-color: rgb(187, 32, 32);
     text-shadow: none;   
 }
 
@@ -126,7 +136,7 @@ main{
     overflow: auto;
     margin: 20px auto;
     padding: 20px 50px;
-    border:double 5px rgb(65, 65, 25) ;
+    border:double 5px rgb(65, 30, 25) ;
 }
 
 .box-stop{
@@ -147,6 +157,150 @@ main{
     flex-direction: column;
 }
 
+footer{
+    background-color:rgb(156, 44, 44) ;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer svg{
+    width: 30px;
+    height: 30px;
+    fill: rgb(244, 244, 238);
+    margin-right: 6px;
+}
+footer ul{
+    text-decoration: solid;
+}
+
+.bg-red{
+    background-color: rgb(148, 20, 20);
+}
+
+.box-stop{
+    padding: 4px 0;
+    text-align: center;
+    background-color: rgb(244, 242, 239);
+    color: rgb(209, 76, 76);
+    font-size: 0.8em;
+}
+.productos{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos figure{
+    width: 30px;
+    border: solid rgb(222, 202, 165) 0.5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.productos figure img{
+    display: block;
+    margin: auto;
+}
+
+.filters{
+    padding: 0 20px 30px 30px;
+}
+
+.filters a{
+    color: rgb(148, 39, 39);
+    font-size: .7em;
+    text-decoration: solid;
+    margin-bottom: 4px;
+    text-transform: lowercase;
+}
+
+.filters a:hover{
+    color: rgb(220, 15, 15);
+}
+
+.filters span{
+    display: block;
+    color: rgb(8, 8, 8);
+    margin: 10px 0;
+    letter-spacing: 0.5px;
+    font-size: 6px;
+}
+
+   .filters select{
+    color: rgb(251, 228, 194);
+    border: none;
+    background-color: rgb(33, 32, 32);
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.filters li{
+    padding-left: 10px;
+    list-style: none;
+}
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.actions button{
+    margin-left: 10px;
+    background-color: rgb(174, 40, 40);
+    color: rgb(12, 12, 12);
+    padding: 4px;
+    border: none;
+    border-radius: 3px;
+}
+.actions input{
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(240, 255, 255);
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 20% repeat(2.1fr);
+    grid-template-rows: 80% repeat(3, 300px);
+    gap: 5px;
+}
+
+.productos .actions{
+      padding: 0 30px;
+      grid-area: actions;  
+}
+
+.productos .vinos{
+    grid-area: vinos;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.productos .aceitedeoliva{
+    grid-area: aceite de oliva;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+}
+.productos .conservas{
+    grid-area: conservas;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+}
+
 img{
     margin-bottom: 10px;
 }
@@ -157,7 +311,7 @@ img{
 }
 
 .icono{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .icono{
@@ -202,10 +356,75 @@ img{
 
 .productos input{
     display: grid;
-    grid-template-columns: 20% repeat(2,1fr); 
+    grid-template-columns: 20% repeat(2.1fr); 
     grid-template-rows: 80%;
 }
 
-@media (min-width: 280px) and (max-width: 1064px) {
-    
+
+
+.contacto{
+    display: grid;
+    grid-template-columns: 20% repeat(2.1fr);
+    grid-template-rows: 80%;
+}
+
+.contacto main div label{
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
+    grid-template-areas: initial;
+}
+.productos main input{
+    margin-right: 30px;
+}
+
+@media(width <1024px){
+    .productos figure{
+        width: 48%;
+    }
+}
+@media(width <380px){
+    nav{ flex-direction: column;}
+
+    .productos figure{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    footer div:nth-child(2){
+        margin: 10px 0;
+    }
+    .about .about__box--reverse,
+    .about .about__box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__img--md{
+        width: 300px;
+    }
+    .about h1, .about h2{
+        text-align: center;
+    }
+    .productos{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "vinos"
+        "aceite de oliva"
+        "conservas";
+    }
+    .productos .vinos,.productos .aceitedeoliva, .productos .conservas{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .promociones{
+        width: 50%;
+        padding: 0%;
+    }
+    nav{
+        width: 100%;
+    }
 }

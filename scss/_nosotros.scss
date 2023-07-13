@@ -1,0 +1,29 @@
+.nosotros{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+nav{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+main{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+    h1{
+        text-align: center;
+        justify-content: center;
+        color: rgb(140, 39, 39);
+    }
+    figure{
+        display: flex;
+
+    }
+    }
+
+}

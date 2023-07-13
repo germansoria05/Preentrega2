@@ -1,0 +1,38 @@
+@media (width < 1024px){
+    .productos figure{
+        width: 48%;
+    }
+}
+
+@media (width < 768px){
+    /* index */
+    .productos{
+        padding: 0 20px;
+    }
+    .productos figure{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+        footer div:nth-child(2){
+            margin: 10px 0;
+        }
+        .about .about__box--reverse,
+        .about .about__box{
+            flex-direction: column;
+            align-items: center;
+        }
+        .about__img--md{
+            width: 300px;
+        }
+        .about h1,
+        .about h2{
+            text-align: center;
+        }
+        @media (min-width:280px) and (max-width:320px){
+            .botonera img{
+                width: 150px;
+            }
+        }
+    }
