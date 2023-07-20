@@ -6,3 +6,4 @@ Trate de hacer todo mas o menos como lo que aprendi. Me falta mucho todavia.
 Es un proyecto de web, no es lo que yo queria hacer. Pero para empezar no me parece que esta mal. 
 Desde ya agradezco la buena predisposicion de la profesora Laura Avalle y de los tutores. 
 Saludos cordiales.
+El link creado es el siguiente https://lafinca.vercel.app/
