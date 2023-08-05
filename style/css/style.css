@@ -13,7 +13,7 @@
    .botonera img{
     width: 100px;
    }
-   botonera a{
+   .botonera a{
     color: rgb(231, 229, 227);
    }
 
@@ -195,16 +195,14 @@ footer ul{
 }
 
 .productos figure{
-    width: 30px;
-    border: solid rgb(222, 202, 165) 0.5px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    padding: 0 15px;
+    width: 100px;
+
+  
 }
 
 .productos figure img{
-    display: block;
-    margin: auto;
+    display: flex;
+    
 }
 
 .filters{
@@ -283,6 +281,7 @@ footer ul{
     align-items: center;
     justify-content: center;
     padding: 0 80px;
+    text-align: center;
 }
 
 .productos .aceitedeoliva{
@@ -292,6 +291,7 @@ footer ul{
     align-items: center;
     justify-content: center;
     padding: 0 80px;
+    text-align: center;
 }
 .productos .conservas{
     grid-area: conservas;
@@ -300,6 +300,7 @@ footer ul{
     align-items: center;
     justify-content: center;
     padding: 0 80px;
+    text-align: center;
 }
 
 img{
@@ -320,7 +321,7 @@ img{
     left: 10px;
 }
 .productos{
-    display: block;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -328,20 +329,32 @@ img{
 }
 
 .productos figure{
-    width: 75%;
+    width: 100%;
     margin-bottom: 30px;
     padding: 0 20px;
+    align-self: start;
 
+}
+.productos p{
+    text-align: center;
+    text-justify: auto;
+    align-items: center;
+    align-self: start;  
 }
 
 .productos figcaption{
     color: rgb(198, 83, 83);
     font-size: 1.6em;
 }
+.productos image{
+    justify-content: center;
+    direction: unset;
+    
+}
 .productos figure p{
     font-size: 1.6em;
     line-height: 1.3em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .productos figure button{
@@ -371,7 +384,8 @@ img{
 }
 
 
-.contacto main div label{
+
+.contacto main label{
     display: grid;
     grid-template-columns: max-content;
     grid-template-rows: max-content;
@@ -383,7 +397,7 @@ img{
 
 @media(width <1024px){
     .productos figure{
-        width: 48%;
+        width: 100%;
     }
 }
 @media(width <380px){
@@ -431,35 +445,3 @@ img{
         width: 100%;
     }
 }
-.header-animated{
-    height: 50vh;
-    background-size: cover;
-    animation-name:header-animation;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-}
-.card-flip{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    transform-style: preserve-3d; 
-    transition: transform 0.5s ease; 
-    .card-front, .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden; 
-      }
-      .card-front {
-        background-color: #EEE;
-      }
-      .card-back {
-        background-color: #EEE;
-        transform: rotateY(180deg); 
-      }
-      &:hover {
-        transform: rotateY(180deg); 
-         }
-  }
-  
-  

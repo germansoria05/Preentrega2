@@ -4,13 +4,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     figure{
-        width: 30px;
-        border: solid $secondaryColor 1px;
-        border-radius: 5px;
+        width: 10px;
         margin-bottom: 30px;
         padding: 0 20px;
         img{
-            display: block;
+            display: contents;  
             margin: auto;
         }
         figcaption{
@@ -18,7 +16,10 @@
             font-size: $textMd;
         }
         p{
-            font-size: $textMd
+            text-align: center;
+          margin-left: 50em;
+
+            
         }
         bottom{
             border: none;
